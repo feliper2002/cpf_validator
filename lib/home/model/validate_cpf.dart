@@ -26,6 +26,18 @@ class ValidateCPFImpl implements ValidateCPF {
 
   @override
   bool validate(String cpf) {
+    Map<String, dynamic> errors = {};
+
+    if (cpf.isEmpty) {
+      errors.putIfAbsent('EmptyCPFInputError', () => null);
+    }
+
+    if (cpf.length != 11) {
+      errors.putIfAbsent('CPFLenghError', () => null);
+    }
+
+    if (errors.isNotEmpty) return false;
+
     final cpfList = <int>[];
 
     for (var i = 0; i < cpf.length; i++) {
