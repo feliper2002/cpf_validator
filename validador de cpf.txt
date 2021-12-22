@@ -1,0 +1,50 @@
+- [ ] Limite de 11 dígitos no CPF
+- [ ] Considerar 0 até mesmo à esquerda
+- [ ] Todos os "zeros" devem ser considerados
+- [ ] CPF como String
+- [ ] CPF composto de 3 trios (###.###.###)
+
+Validação do 10º dígito
+
+- [ ] Validar o 10º digito
+- [ ] Multiplicar os 9 primeiros digitos começando por 10 e decrescendo até 2
+
+exemplo: 123.456.789-49
+
+1 * 10
+2 * 9
+3 * 8
+4 * 7
+.
+.
+.
+9 * 2
+
+- [ ] Somar todos os resultados
+- [ ] Resultado da soma deve ser multiplicado por 10
+- [ ] Após isso, dividir por 11
+- [ ] Calcular o resto dessa divição pelo 10º digito (resto = divisão % 10º digito)
+
+Validação do 11º dígito
+
+- [ ] Validar o 11º digito
+- [ ] Multiplicar os 10 primeiros digitos começando por 11 e decrescendo até 2
+
+exemplo: 123.456.789-49
+
+1 * 11
+2 * 10
+3 * 9
+4 * 8
+.
+.
+.
+4 * 2
+
+- [ ] Somar todos os resultados
+- [ ] Resultado da soma deve ser multiplicado por 10
+- [ ] Após isso, dividir por 11
+- [ ] Calcular o resto dessa divição pelo 10º digito (resto = divisão % 10º digito)
+
+**** Se o resto da divisão pelo 10º digito for 10, deve considerar o resto sendo 0
+
