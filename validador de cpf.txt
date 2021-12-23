@@ -1,13 +1,13 @@
-- [ ] Limite de 11 dígitos no CPF
-- [ ] Considerar 0 até mesmo à esquerda
-- [ ] Todos os "zeros" devem ser considerados
-- [ ] CPF como String
-- [ ] CPF composto de 3 trios (###.###.###)
+- [x] Limite de 11 dígitos no CPF
+- [x] Considerar 0 até mesmo à esquerda
+- [x] Todos os "zeros" devem ser considerados
+- [x] CPF como String
+- [x] CPF composto de 3 trios (###.###.###)
 
 Validação do 10º dígito
 
-- [ ] Validar o 10º digito
-- [ ] Multiplicar os 9 primeiros digitos começando por 10 e decrescendo até 2
+- [x] Validar o 10º digito
+- [x] Multiplicar os 9 primeiros digitos começando por 10 e decrescendo até 2
 
 exemplo: 123.456.789-49
 
@@ -20,15 +20,15 @@ exemplo: 123.456.789-49
 .
 9 * 2
 
-- [ ] Somar todos os resultados
-- [ ] Resultado da soma deve ser multiplicado por 10
-- [ ] Após isso, dividir por 11
-- [ ] Calcular o resto dessa divição pelo 10º digito (resto = divisão % 10º digito)
+- [x] Somar todos os resultados
+- [x] Resultado da soma deve ser multiplicado por 10
+- [x] Após isso, dividir por 11
+- [x] Calcular o resto dessa divição pelo 10º digito (resto = divisão % 10º digito)
 
 Validação do 11º dígito
 
-- [ ] Validar o 11º digito
-- [ ] Multiplicar os 10 primeiros digitos começando por 11 e decrescendo até 2
+- [x] Validar o 11º digito
+- [x] Multiplicar os 10 primeiros digitos começando por 11 e decrescendo até 2
 
 exemplo: 123.456.789-49
 
@@ -41,10 +41,10 @@ exemplo: 123.456.789-49
 .
 4 * 2
 
-- [ ] Somar todos os resultados
-- [ ] Resultado da soma deve ser multiplicado por 10
-- [ ] Após isso, dividir por 11
-- [ ] Calcular o resto dessa divição pelo 10º digito (resto = divisão % 10º digito)
+- [x] Somar todos os resultados
+- [x] Resultado da soma deve ser multiplicado por 10
+- [x] Após isso, dividir por 11
+- [x] Calcular o resto dessa divição pelo 10º digito (resto = divisão % 10º digito)
 
 **** Se o resto da divisão pelo 10º digito for 10, deve considerar o resto sendo 0
 
