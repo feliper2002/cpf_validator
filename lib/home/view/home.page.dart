@@ -44,6 +44,10 @@ class _HomePageState extends State<HomePage> {
               labelText: "Text CPF here",
               labelStyle: const TextStyle(color: Colors.white),
               focusColor: Colors.white,
+              border: OutlineInputBorder(
+                borderSide: const BorderSide(color: Colors.white),
+                borderRadius: BorderRadius.circular(12),
+              ),
               enabledBorder: OutlineInputBorder(
                 borderSide: const BorderSide(color: Colors.white),
                 borderRadius: BorderRadius.circular(12),
@@ -69,12 +73,16 @@ class _HomePageState extends State<HomePage> {
           SizedBox(height: size.height * .08),
           Visibility(
             visible: controller.validateMessage.isNotEmpty,
-            child: Text(
-              controller.validateMessage,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.w500,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Text(
+                controller.validateMessage,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           ),

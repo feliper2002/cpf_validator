@@ -22,10 +22,10 @@ class ValidatorController {
   validate(String cpf) {
     bool isValid = _validateCPFUsecase.validate(cpf);
     if (isValid) {
-      setMessage("CPF validated! 🎉🎉");
+      setMessage("CPF $cpf validated! 🎉🎉");
       setCPF("");
     } else {
-      setMessage("CPF is invalid! 😨😱😭");
+      setMessage("CPF $cpf is invalid! 😨😱😭");
       setCPF("");
     }
   }
