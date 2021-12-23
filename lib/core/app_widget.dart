@@ -1,3 +1,4 @@
+import 'package:cpf_validator/home/view/home.page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -5,9 +6,9 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Container(),
+      home: HomePage(),
       title: 'CPF Validator',
     );
   }

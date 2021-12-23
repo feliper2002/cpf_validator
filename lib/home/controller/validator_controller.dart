@@ -12,5 +12,21 @@ class ValidatorController {
     cpf = value;
   }
 
-  bool validate(String cpf) => _validateCPFUsecase.validate(cpf);
+  String validateMessage = '';
+  setMessage(value) {
+    validateMessage = value;
+  }
+
+  bool get buttonEnable => cpf.length == 11;
+
+  validate(String cpf) {
+    bool isValid = _validateCPFUsecase.validate(cpf);
+    if (isValid) {
+      setMessage("CPF validated! 🎉🎉");
+      setCPF("");
+    } else {
+      setMessage("CPF is invalid! 😨😱😭");
+      setCPF("");
+    }
+  }
 }
