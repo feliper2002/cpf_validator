@@ -56,16 +56,14 @@ class _HomePageState extends State<HomePage> {
             ),
             style: const TextStyle(color: Colors.white),
             onChanged: (value) {
-              setState(() {
-                controller.setCPF(value!);
-              });
+              controller.setCPF(value!);
             },
           ),
           ValidatorButton(
             enabled: controller.buttonEnable,
             onPressed: () {
               setState(() {
-                controller.validate(controller.cpf);
+                controller.validate();
                 textController.clear();
               });
             },
