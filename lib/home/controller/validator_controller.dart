@@ -19,8 +19,9 @@ class ValidatorController {
 
   bool get buttonEnable => cpf.length == 11;
 
+  bool get isValid => _validateCPFUsecase.validate(cpf);
+
   validate() {
-    bool isValid = _validateCPFUsecase.validate(cpf);
     if (isValid) {
       setMessage("CPF $cpf validated! 🎉🎉");
     } else {
